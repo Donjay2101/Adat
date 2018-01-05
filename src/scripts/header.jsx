@@ -4,13 +4,8 @@ import About from './about.jsx';
 
 
 class Header extends React.Component{
-	RenderPages(page){
-		if(page=='About')
-		{
-			
-		}
-	}
     render(){
+		var handleToUpdate=this.props.handleToUpdate;
         return(			
 				<nav id="nav" className="navbar">
 					<div className="container">
@@ -26,12 +21,12 @@ class Header extends React.Component{
 							</div>
 						</div>
 						<ul className="main-nav nav navbar-nav navbar-right">
-							<li ><a href="#home"  className="iterateMenu">Home</a></li>
-							<li ><a className="iterateMenu"  href="#about">About</a></li>
-							<li ><a  className="iterateMenu"  href="#portfolio">Portfolio</a></li>
-							<li ><a className="iterateMenu" href="#service">Services</a></li>
-							<li ><a className="iterateMenu" href="#pricing">Prices</a></li>
-							<li ><a className="iterateMenu" href="#team">Team</a></li>
+							<li ><a href="#home"   className="iterateMenu" onClick={() => handleToUpdate('home')}>Home</a></li>
+							<li ><a className="iterateMenu"  href="#about" onClick={() => handleToUpdate('about')}>About</a></li>
+							<li ><a  className="iterateMenu"  href="#portfolio" onClick={() => handleToUpdate('portfolio')}>Portfolio</a></li>
+							<li ><a className="iterateMenu" href="#service" onClick={() => handleToUpdate('services')}>Services</a></li>
+							<li ><a className="iterateMenu" href="#pricing" onClick={() => handleToUpdate('price')}>Prices</a></li>
+							<li ><a className="iterateMenu" href="#team" onClick={() => handleToUpdate('team')}>Team</a></li>
 							<li className="has-dropdown ">
 							
 							<a href="#blog">Blog <span  className="glyphicon glyphicon-chevron-down"></span></a>
@@ -39,7 +34,7 @@ class Header extends React.Component{
 									<li><a className="iterateMenu" href="#">blog post</a></li>
 								</ul>
 							</li>
-							<li><a className="iterateMenu" href="#contact">Contact</a></li>
+							<li><a className="iterateMenu" href="#contact" onClick={() => handleToUpdate('contact')}>Contact</a></li>
 						</ul>
 					</div>
 				</nav>        	

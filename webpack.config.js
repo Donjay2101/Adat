@@ -67,7 +67,8 @@ module.exports={
         new extractTextPlugin('app.css'),
         new CopyWebpackPlugin([
             { from: path.join(__dirname,'src/script'),to: path.join(__dirname,'dist/scripts') },
-            { from: path.join(__dirname,'src/style'),to: path.join(__dirname,'dist/styles') }
+            { from: path.join(__dirname,'src/style'),to: path.join(__dirname,'dist/styles') },
+            { from: path.join(__dirname,'src/fonts'),to: path.join(__dirname,'dist/fonts') }
         ])
     ]
 }

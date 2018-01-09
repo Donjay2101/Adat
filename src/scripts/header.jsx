@@ -7,7 +7,7 @@ class Header extends React.Component{
     render(){
 		var handleToUpdate=this.props.handleToUpdate;
         return(			
-				<nav id="nav" className="navbar">
+				<nav id="nav"  className=" navbar nav-transparent fixed-nav">
 					<div className="container">
 						<div className="navbar-header">
 							<div className="navbar-brand">
@@ -21,19 +21,19 @@ class Header extends React.Component{
 							</div>
 						</div>
 						<ul className="main-nav nav navbar-nav navbar-right">
-							<li ><a href="#home"   className="iterateMenu" onClick={() => handleToUpdate('home')}>Home</a></li>
+							<li className="homelink"><a href="#home" className="iterateMenu" onClick={() => handleToUpdate('home')}>Home</a></li>
 							<li ><a className="iterateMenu"  href="#about" onClick={() => handleToUpdate('about')}>About</a></li>
 							<li ><a  className="iterateMenu"  href="#portfolio" onClick={() => handleToUpdate('portfolio')}>Portfolio</a></li>
 							<li ><a className="iterateMenu" href="#service" onClick={() => handleToUpdate('services')}>Services</a></li>
 							<li ><a className="iterateMenu" href="#pricing" onClick={() => handleToUpdate('price')}>Prices</a></li>
 							<li ><a className="iterateMenu" href="#team" onClick={() => handleToUpdate('team')}>Team</a></li>
-							<li className="has-dropdown ">
+							{/* <li className="has-dropdown ">
 							
 							<a href="#blog">Blog <span  className="glyphicon glyphicon-chevron-down"></span></a>
 								<ul className="dropdown">
 									<li><a className="iterateMenu" href="#">blog post</a></li>
 								</ul>
-							</li>
+							</li> */}
 							<li><a className="iterateMenu" href="#contact" onClick={() => handleToUpdate('contact')}>Contact</a></li>
 						</ul>
 					</div>

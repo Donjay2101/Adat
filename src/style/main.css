@@ -126,7 +126,8 @@ ul, ol {
 
 .md-padding {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
+    height: 100%;
 }
 
 .sm-padding {
@@ -138,7 +139,8 @@ ul, ol {
 /* --  background section  -- */
 
 .bg-grey {
-    background-color: #FAFAFA;
+    height:100%;
+    /* background-color: #FAFAFA; */
     border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
 }
@@ -162,14 +164,23 @@ ul, ol {
     background-attachment: fixed;
 }
 
-.bg-img .overlay {
+.bg-img .overlay{
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
-    background: #1C1D21;
+    opacity: .9;
+    background: #e4e4e4;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .9;
+    background: #e4e4e4;
 }
 
 
@@ -177,7 +188,7 @@ ul, ol {
 
 .section-header {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .section-header .title {
@@ -625,11 +636,21 @@ header {
 \*------------------------------------*/
 
 .about {
+    /* box-shadow: 9px 10px 17px 6px #929090;
+    position: relative;
+    text-align: center;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    z-index: 11;
+    margin: 15px 0px; */
+    box-shadow: 9px 10px 17px 6px #969696;
     position: relative;
     text-align: center;
     padding: 40px 20px;
     border: 1px solid #EEE;
     margin: 15px 0px;
+    background-color: #FFF;
+    z-index: 11;
 }
 
 .about i {
@@ -640,7 +661,7 @@ header {
 
 .about:after {
     content: "";
-    background-color: #1C1D21;
+    background-color: #1b1c1c;
     position: absolute;
     left: 0;
     top: 0;
@@ -661,7 +682,7 @@ header {
 }
 
 .about:hover h3 {
-    color: #fff;
+    color:white;
 }
 
 
@@ -672,6 +693,7 @@ header {
 .work {
     position: relative;
     padding: 20px;
+    box-shadow: 6px 3px 27px -3px #595757;
 }
 
 .work>img {
@@ -785,10 +807,13 @@ header {
 \*------------------------------------*/
 
 .service {
+    box-shadow: 9px 10px 17px 6px #8d8d8d;
     position: relative;
     padding: 40px 20px 40px 70px;
     margin: 15px 0px;
     border: 1px solid #EEE;
+    z-index: 11;
+    background-color: white;
 }
 
 .service i {
@@ -802,7 +827,7 @@ header {
 
 .service:after {
     content: "";
-    background-color: #1C1D21;
+    background-color: #1b1c1c;
     position: absolute;
     left: 0;
     top: 0;
@@ -868,6 +893,7 @@ header {
 \*------------------------------------*/
 
 .pricing {
+    box-shadow: 9px 10px 17px 6px #929090;
     position: relative;
     text-align: center;
     border: 1px solid #EEE;
@@ -996,6 +1022,10 @@ header {
 /*------------------------------------*\
 	Team
 \*------------------------------------*/
+
+.boxshadow{
+    box-shadow:5px 4px 20px 3px grey;
+}
 
 .team {
     position: relative;
@@ -1752,6 +1782,15 @@ header {
   }
 }
 
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
 
 
 /* Text Styles, Colors, Backgrounds */

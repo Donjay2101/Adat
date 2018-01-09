@@ -10,7 +10,7 @@ class Contact extends React.Component{
             <div className="bg-img" style={{backgroundImage:'url("'+require('../images/background1.jpg')+'")'}}>
 			<div className="overlay"></div>
 		    </div>	
-            <div className="container" style={{boxShadow:'7px 7px 13px 9px #a19c9c',padding:'25px'}}>            
+            <div className="container" style={{boxShadow:'7px 7px 13px 9px #a19c9c',padding:'25px',backgroundColor:'#fff'}}>            
                 <div className="row">                    
                     <div className="section-header text-center">
                         <h2 className="title">Get in touch</h2>
